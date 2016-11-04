@@ -15,27 +15,21 @@ public class Stack {
 	}
 
 	public void push(int i) {			
-		numeros[tamañoPila]=i;//numeros[0]=i	
-		tamañoPila=tamañoPila+1;//tamañoPila aumenta en 1
-				
-	}
-	
-	public void push2(int i,int x) {	
 		numeros[tamañoPila]=i;
 		tamañoPila=tamañoPila+1;
-		numeros[tamañoPila]=x;
-		tamañoPila=tamañoPila+1;
-		
 	}
 	
-	public boolean tamañoStackEs2(){
-		if(tamañoPila==2){
-			estado=true;
-			return estado;
-		}else{
-			estado=false;
-			return estado;
-		}
-		
+	public int tamaño(){
+		return tamañoPila;
 	}
+	
+	public int pop(int x){								
+		return x;
+	}
+	
+	public int top(int x){
+		
+		return x;
+	}
+	
 }
